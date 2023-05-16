@@ -1,0 +1,419 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde1: #03492c;
+    --verde2:#3d732a;
+    --verde3: #069c58;
+    --amarelo: #f1c034;
+    --text: white;
+    --whatsapp: #075E54;
+    --facebook: #3b5998;
+    --instagram: #DD2A7B;
+    --twitter: #00acee;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+a, ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    background-color: var(--verde3);
+}
+
+.icon img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.icon.whatsapp:hover{
+    background-color: var(--whatsapp);
+    cursor: pointer;
+}
+.icon.facebook:hover{
+    background-color: var(--facebook);
+    cursor: pointer;
+}
+.icon.instagram:hover{
+    background-color: var(--instagram);
+    cursor: pointer;
+}
+.icon.twitter:hover{
+    background-color: var(--twitter);
+    cursor: pointer;
+}
+
+.icon img:hover{
+    filter: invert(99%) sepia(94%) saturate(18%) hue-rotate(319deg) brightness(105%) contrast(100%);
+}
+
+
+.navbar{
+    height: 60px;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+
+section{
+    height: 600px;
+}
+
+.container-banner{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    background-image: url("../images/ivoneto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.banner-img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner-img img{
+    border-radius: 50%;
+}
+
+.banner-carroussel{
+    flex: 1;
+    height: inherit;
+    margin: 0 10px;
+    color: #333;
+}
+
+.carroussel{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+p{
+    margin: 5px 10px;
+}
+
+.text-ivo{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.text-destaque{
+    background-color: var(--verde1);
+    padding: 10px;
+    color: var(--amarelo);
+}
+
+.text-fonte{
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.text-fonte a{
+    font-size: 10px;
+    color: #333;
+}
+
+.text-fonte a:hover{
+    text-decoration: underline;
+}
+
+.banner-links{
+    width: 300px;
+    height: inherit;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;   
+}
+
+.banner-links a{
+    color: var(--text);
+    font-weight: lighter;
+}
+
+.banner-links a:hover{
+    text-decoration: underline;
+}
+
+
+.link-box1{
+    margin-top: 50px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.link-box1 span{
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link-box1:hover{
+    filter: contrast(100%) brightness(150%);
+    transition: 0.5s;
+}
+
+.link-box{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+.link-box-child:hover{
+    filter: contrast(200%) brightness(150%);
+    transition: 0.5s;
+}
+.link-box-child{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-box-child span{
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.link-verde1{
+    background-color: var(--verde1);
+}
+
+.link-verde2{
+    background-color: var(--verde2);
+}
+
+.link-verde3{
+    background-color: var(--verde3);
+}
+
+.link-amarelo{
+    background-color: var(--amarelo);
+}
+
+
+#blog{
+    margin: 10px 50px;
+    height: auto;
+
+}
+
+.title-section h1{
+    color: var(--verde1);
+    border-bottom: 2px solid var(--verde1);
+}
+
+.container-blog{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 22px;
+}
+
+.card-article{
+    border: 1px solid silver;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-article:hover{
+    border: 2px solid var(--verde3);
+    box-shadow: 5px 5px 50px grey;
+}
+
+.card-article--img{
+    height: 140px; 
+    display: flex;  
+}
+
+img.article-img{
+    width: 100%;
+    
+}
+
+.card-article--title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+.card-article--description{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.card-article--date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-article--date p{
+    font-weight: lighter;
+    color: #333;
+}
+
+.card-article--date a{
+    color: cornflowerblue;
+}
+
+.card-article--date a:hover{
+    text-decoration: underline;
+}
+
+.card-article--footer{
+    width: 100%;
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-article--footer.compartilhe{
+    color: #333;
+    margin-left: 40px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: var(--verde3);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer{
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    font-weight: bolder;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/* PAGE LEI-EM-VIGOR */
+
+main{
+    margin: 10px;
+    background-color: darkgray;
+}
+
+.container-leis-em-vigor{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.card-lei-em-vigor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+.card-lei-em-vigor:hover{
+    background-color: slategray;
+    cursor: pointer;
+    color: white;
+    
+    
+}
+
+.lei--title{
+    width: 100%;
+}
+
+.lei--title h1{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.ementa{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ementa p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.link-texto-original{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.link-texto-original p{
+    font-size: 14px;
+}
+
+.link-texto-original a{
+    color: #333;
+    font-size: 14px;
+}
+
+.link-texto-original a:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+/* FIM PAGE LEI-EM-VIGOR */
